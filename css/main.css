@@ -1,0 +1,270 @@
+:root{
+    --nav-narrow-width: 72px;
+    --nav-medium-width: 244px;
+    --nav-wide-width: 335px;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+    height: 5000px;
+}
+ul {
+    list-style: none;
+}
+a {
+    text-decoration: none;
+}
+.leftBar{
+    padding-left: 20px;
+    width: var(--nav-wide-width);
+    background: white;
+    z-index: 10;
+}
+.leftBar .img{
+    margin-top: 37px;
+    height: 65px;
+    flex-shrink: 0;
+}
+.leftBar .img2{
+    display: none;
+    margin: 30px 0px 0px 0;
+    padding: 12px 12px 12px 12px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 50%;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+    transition: all .3s ease-in-out;
+}
+.leftBar .more{
+    height: 60px;
+    margin-top: 10%;
+}
+.leftBar .img img{
+    width: 100px;
+    transition: all .3s ease-in-out;
+    -webkit-transition: all .3s ease-in-out;
+    -moz-transition: all .3s ease-in-out;
+    -ms-transition: all .3s ease-in-out;
+    -o-transition: all .3s ease-in-out;
+}
+.leftBar .mainBar{
+    flex-grow: 1;
+}
+.leftBar .mainBar ul li,
+.leftBar .more {
+    margin: 8px 8px 15px 0;
+    padding: 10px 10px 10px 7px;
+    cursor: pointer;
+    border: 1px solid transparent;
+    border-radius: 24px;
+    -webkit-border-radius: 24px;
+    -moz-border-radius: 24px;
+    -ms-border-radius: 24px;
+    -o-border-radius: 24px;
+    transition: background .3s;
+    -webkit-transition: background .3s;
+    -moz-transition: background .3s;
+    -ms-transition: background .3s;
+    -o-transition: background .3s;
+}
+.leftBar .mainBar ul li:hover,
+.leftBar .img2:hover,
+.leftBar .more:hover{
+    background: rgb(250, 250, 250);
+}
+.leftBar .mainBar ul li:hover img,
+.leftBar .mainBar ul li:hover svg,
+.leftBar .img2:hover svg,
+.leftBar .more:hover svg {
+    transform:scale(1.1);
+    -webkit-transform:scale(1.1);
+    -moz-transform:scale(1.1);
+    -ms-transform:scale(1.1);
+    -o-transform:scale(1.1);
+}
+.leftBar .mainBar ul li span, .leftBar .more span {
+    margin-left: 13px;
+    font-size: 16px;
+    vertical-align: bottom;
+}
+.leftBar .mainBar ul li .active{
+    font-weight: 500;
+}
+.leftBar .mainBar ul li .userImage{
+    width: 24px;
+    height: 24px;
+}
+.contentContainer{
+    background-color: rgb(250, 250, 250);
+    width: calc(100% - var(--nav-wide-width));
+}
+.contentContainer>div{
+    width: calc(73% - var(--nav-wide-width));
+}
+.contentContainer .content,.contentContainer .rightBar {
+    margin-top: 25px;
+}
+.contentContainer .content .card{
+    width: 30rem;
+    /* height: 60%; */
+}
+.card .card-header .userImage{
+    width: 32px;
+    height: 32px;
+}
+.card .card-header {
+    padding: 15px;
+}
+.card .card-header .userName,
+.card .card-header .dot,
+.card .card-header .userInfo,
+.rightBarHeader .userInfo
+{
+    font-size: 14px;
+    font-weight: 600;
+    color: rgb(38 38 38);
+    margin-left: 10px;
+}
+.card .card-header .userInfo,
+.rightBarHeader .switch{
+    color: rgb(0, 149, 246);
+}
+.card .card-header .userName,
+.card .card-header .userInfo,
+.card .card-body .IconRow ul li,
+.card .card-header .threeDot,
+.rightBarHeader .userInfo .userAccountName,
+.rightBarHeader .switch{
+    cursor: pointer;
+}
+.card .card-body .IconRow ul{
+    margin-bottom: 0;
+}
+.card .card-body div{
+    margin-bottom: 8px;
+}
+.card .card-body .IconRow ul li:hover svg, .card .card-header .userName:hover,.card .card-header .userInfo:hover{
+    color: rgb(142, 142, 142);
+    fill: rgb(142, 142, 142);
+}
+.card .card-body .likes-number a{
+    color: rgb(38 38 38);
+}
+.card .card-body .likes-number a,
+.rightBarHeader  .suggestions{
+    font-weight: 600;
+    font-size: 14px;
+}
+.card .card-body .comment-number a,
+.rightBarHeader .userName
+{
+    color: rgb(142, 142, 142);
+    font-weight: 400;
+    font-size: 14px;
+}
+.card .card-body .comment-time {
+    font-weight: 400;
+    font-size: 10px;
+}
+.card .card-body .comment-time{
+    color: rgb(142, 142, 142);
+    text-transform: uppercase;
+
+}
+.card .card-footer{
+    border-top: 1px solid rgba(0, 0, 0, 0.062);
+}
+.card .card-footer form .textarea{
+    height: 18px;
+
+}
+.card .card-footer form textarea{
+    resize: none;
+    border: none;
+    outline: none;
+    color: rgb(142, 142, 142)
+}
+.card .card-footer form button{
+    border: none;
+    outline: none;
+    background:none;
+    color: #b3dbff;
+    font-size: 0.875rem;
+    font-weight: 600;
+}
+.rightBarHeader .card-header .userImage{
+    width: 60px;
+    height: 60px;
+}
+.rightBarHeader  .suggestions .suggestionsForYou{
+    color: rgb(142, 142, 142)
+
+}
+.rightBarHeader .switch,
+.rightBarHeader  .suggestions .seeAll{
+    font-weight: 600;
+    font-size: 12px;
+}
+.rightBarHeader .suggestionsItems ul{
+    padding-left: 0 !important;
+}
+.rightBarHeader .suggestionsItems ul li{
+    margin-bottom: 10px;
+}
+.rightBarHeader .suggestionsItems ul .card-header .userImage{
+    width: 42px;
+    height: 42px;
+}
+@media (min-width: 1264px) and (max-width: 1919px){
+.leftBar{
+        width: var(--nav-medium-width);
+    }
+.contentContainer{
+    width: calc(100% - var(--nav-medium-width));
+}
+}
+
+@media (min-width: 768px) and (max-width: 1263px){
+.leftBar{
+        width: var(--nav-narrow-width);
+        padding-left: 10px;
+    }
+.leftBar .mainBar{
+    margin-top: 20px;
+}
+.leftBar .mainBar ul li span,
+.leftBar .more span{
+        display: none;
+    }
+.leftBar .mainBar ul li,
+.leftBar .more{
+    border-radius: 50%;
+    padding: 12px;
+    -webkit-border-radius: 50%;
+    -moz-border-radius: 50%;
+    -ms-border-radius: 50%;
+    -o-border-radius: 50%;
+}
+.leftBar .img{
+        display: none;
+    }
+.leftBar .img2{
+        display:block !important;
+    }
+.contentContainer{
+    width: calc(100% - var(--nav-narrow-width));
+}
+}
+.footer-container ul{
+    padding-left: 0;
+}
+.footer-container ul li a,.footer-container p {
+    color:rgb(142 142 142);
+    margin: 10px;
+    font-size: 12px;
+}

@@ -1,0 +1,311 @@
+/*start main rule*/
+:root{
+    --main-button-color: rgb(0, 149, 246);
+    --main-text-color: rgb(38 38 38);
+}
+html{
+    -webkit-text-size-adjust: 100%;
+}
+body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background:#FAFAFA;
+    font-family: BlinkMacSystemFont, 'Segoe UI', Roboto, Helvetica, Arial, sans-serif;
+}
+ul {
+    list-style: none;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+a {
+    text-decoration: none;
+}
+.general{
+    height: 100vh;
+    width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: stretch;
+    
+}
+.container{
+    width: 100%;
+    margin-top: 34px;
+    display: flex;
+    justify-content: center;
+
+}
+/*end main rule*/
+
+/*start top*/
+.top{
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    /* border:1px solid #000; */
+    
+}
+
+.top .container .item1{
+    flex-basis: 420px;
+    height: 581px;
+    background-image: url('../image/bg.png');
+    background-position: -46px 0;
+    background-repeat: no-repeat;
+}
+.item1 .img{
+    margin: 27px 0 0 113px;
+    position: relative;
+}
+.item1 .img img{
+    width: 250px;
+    height: 538.84px;
+    position: absolute;
+    left: 0;
+    top: 0;
+    opacity: 1;
+    transition: opacity 1.5s ease-in-out;
+    /*animation-name:change-opacity;
+    -webkit-animation:change-opacity;
+    animation-duration:5s;
+    animation-timing-function: ease-in;
+    animation-iteration-count:infinite;
+    */-webkit-transition: opacity 1.5s ease-in-out;
+    -moz-transition: opacity 1.5s ease-in-out;
+    -ms-transition: opacity 1.5s ease-in-out;
+    -o-transition: opacity 1.5s ease-in-out;
+    -webkit-transition: opacity 1.5s ease-in-out;
+}
+/* @keyframes change-opacity {
+    0%{
+        opacity: 0.8;
+    }
+    30%{
+        opacity: 0.9;
+    }
+    100%{
+        opacity: 1;
+    }
+} */
+
+.top .container .item2{
+    margin-top: 12px;
+    max-width: 350px;
+    height: 581px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-grow: 1;
+}
+.section1 {
+    width: 100%;
+    height: 70%;
+    padding: 10px 0;
+    margin-bottom: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    border: 1px solid #ccc;
+    background:#fff;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+}
+.item-container{
+    width: 80%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item2 .img{
+    width: 180px;
+    height: 15%;
+    margin: 10% 15% 10% 15%;
+    background-image:url('../image/chosentitle.png');
+    background-repeat:no-repeat;
+    background-color: #fff;
+}
+.item2 input{
+    width: 97%;
+    outline: none;
+    border: 1px solid #ccc;
+    background: rgb(250 250 250);
+    margin-bottom: 6px;
+    padding: 11px 0 10px 8px;
+    font-size: 11px;
+    font-weight: normal;
+    color: var(--main-text-color);
+    border-radius: 3px;
+    -webkit-border-radius: 3px;
+    -moz-border-radius: 3px;
+    -ms-border-radius: 3px;
+    -o-border-radius: 3px;
+}
+.item2 .btn-log-in{
+    width: 100%;
+    background: #B2DFFC;
+    color: #ECF3FF; 
+    padding: 9px 8px;
+    font-weight: 600;
+    font-size: .8125rem;
+    border-radius: 3px;
+    outline: none;
+    border:0;
+    margin: 10px;
+}
+.row-line{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-evenly;
+    align-items: center;
+    margin: 10px;
+}
+.row-line .left-line, .row-line .right-line{
+    height: 1px;
+    width: 45%;
+    background: rgb(219 219 219); 
+}
+.orDiv{
+    font-size: .8125rem;
+    color: rgb(142 142 142);
+    margin: 15px;
+}
+.facebook-log-in{
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.facebook-log-in .btn-facebook-log-in{
+    width: 100%;
+    border:0;
+    background:none;
+    cursor: pointer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
+.facebook-log-in span{
+    display: inline-block;
+}
+.facebook-log-in .facebook-img{
+    width: 16px;
+    height: 16px;
+    background-image: url(../image/icon.png);
+    background-position: -414px -259px;
+    
+}
+.facebook-log-in .facebook-text{
+    margin-left: 4%;
+    color: #385185;
+    font-weight: 700;
+}
+.forget-pass {
+    margin: 20px;
+}
+.forget-pass a{
+    color: rgb(0 50 107);
+    font-size: 12px;
+    margin-top: 15px;
+}
+.item2 .section2{
+    width: 100%;
+    border: 1px solid #ccc;
+    background: #fff;
+    border-radius: 2px;
+    -webkit-border-radius: 2px;
+    -moz-border-radius: 2px;
+    -ms-border-radius: 2px;
+    -o-border-radius: 2px;
+    display: flex;
+    justify-content: center;
+    text-align: center;
+}
+.item2 .section2 p {
+    font-size: 14px;
+    padding: 10px 2px;
+}
+.item2 .section2 p a{
+    color: rgb(0, 149, 246);
+    font-weight: 600;
+}
+.item2 .section3{
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+}
+.item2 .section3 div {
+    display: flex;
+    justify-content: center;
+    text-align: center;
+    color: rgb(38 38 38);
+    font-size: 14px;
+}
+.item2 .section3 div a:first-child{
+    margin-right: 8px;
+}
+.item2 .section3 div a img{
+    height: 40px;
+}
+/*end top*/
+
+/*start footer*/
+.footer-container{
+    display: flex;
+    flex-direction: column;
+    align-items:center;
+    color:rgb(142 142 142);
+    font-size: 12px;
+    font-weight: 400;
+    text-align: center;
+}
+.footer-container div:nth-child(2){
+    display: flex;
+}
+.footer-container ul li a{
+    color:rgb(142 142 142);
+    margin: 10px;
+}
+.footer-container div:nth-child(2) select{
+    width: 80px;
+    height: 40px;
+    margin: 0 10px;
+    font-size: 12px;
+    color:rgb(142 142 142);
+    background-color: transparent;
+    border:0;
+    outline: 0;
+    cursor: pointer;
+}
+
+/*end footer*/
+
+/* @media */
+@media screen and (max-width:875px){
+    .top .container .item1 {
+        display: none;
+    }
+.item2 .img {
+    margin: 10% 15% 5% 15%;
+    
+}
+.footer-container ul{
+    width: 90%;
+}
+.footer-container ul li{
+    margin-bottom: 7px;
+}
+}
